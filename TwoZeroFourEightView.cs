@@ -15,6 +15,8 @@ namespace twozerofoureight
         Model model;
         Controller controller;
 
+        TwoZeroFourEightScoreView s = new TwoZeroFourEightScoreView();
+
         public TwoZeroFourEightView()
         {
             InitializeComponent();
@@ -61,13 +63,13 @@ namespace twozerofoureight
             }
         }
 
-        public void UpdateScore(int sum)
+        private void UpdateScore(int sum)
         {
-
-
             lblScore.Text = Convert.ToString(sum);
-
+            s.lblScore.Text = Convert.ToString(sum);
+            s.Show();
         }
+        
         private void UpdateBoard(int[,] board)
         {
             UpdateTile(lbl00, board[0, 0]);
@@ -119,6 +121,11 @@ namespace twozerofoureight
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl33_Click(object sender, EventArgs e)
         {
 
         }

@@ -194,6 +194,7 @@
             this.lbl33.Size = new System.Drawing.Size(51, 51);
             this.lbl33.TabIndex = 15;
             this.lbl33.Text = "0";
+            this.lbl33.Click += new System.EventHandler(this.lbl33_Click);
             // 
             // lbl32
             // 
