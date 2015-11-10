@@ -49,7 +49,7 @@
             this.lblScore.Size = new System.Drawing.Size(35, 13);
             this.lblScore.TabIndex = 1;
             this.lblScore.Text = "label2";
-            this.lblScore.Click += new System.EventHandler(this.label2_Click);
+            //this.lblScore.Click += new System.EventHandler(this.label2_Click);
             // 
             // TwoZeroFourEightScoreView
             // 
