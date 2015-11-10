@@ -22,6 +22,7 @@ namespace twozerofoureight
             InitializeComponent();
             model = new TwoZeroFourEightModel();
             model.AttachObserver(this);
+            model.AttachObserver(s);
             controller = new TwoZeroFourEightController();
             controller.AddModel(model);
             controller.ActionPerformed(TwoZeroFourEightController.LEFT);
@@ -127,7 +128,7 @@ namespace twozerofoureight
 
         private void lbl33_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
